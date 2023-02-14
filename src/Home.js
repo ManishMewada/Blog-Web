@@ -3,12 +3,16 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-    const {data: blogs, isLoading, error} = useFetch('http://localhost:8000/blogs');
+  const { data, isLoading, error } = useFetch('http://localhost:8000/blogs');
+
+    // useEffect(() => {
+    //     console.log('data updated');
+    // }, [blogs]);
     return (
         <div className="home">
-            { error && <div>{ error }</div> } 
-            {(isLoading) ? <div>{"Loading..."}</div> : <BlogList blogs={blogs} title={"All Blogs!"} />}
-            {/* {blogs && } */}
+            {error && <div>{error}</div>}
+            {isLoading ? <div>{"Loading..."}</div> : <BlogList blogs={data} title={"All Blogs!"} />}
+            
         </div>
     );
 }
