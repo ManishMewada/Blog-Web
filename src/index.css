@@ -10,7 +10,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   border-bottom: 1px solid #e3e3e3;
 }
@@ -21,9 +21,9 @@
   margin-left: auto;
 }
 .navbar a {
-  margin-left: 16px;
+  margin-left: 12px;
   text-decoration: none;
-  padding: 6px;
+  padding: 4px;
 }
 .navbar a:hover {
   color: #f1356d;
@@ -129,6 +129,107 @@
   display: block;
 }
 .edit button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new author form */
+.author-create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.author-create label {
+  text-align: left;
+  display: block;
+}
+.author-create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.author-create input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.author-create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* author previews / list */
+.author-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.author-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.author-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.author-preview a{
+  text-decoration: none;
+}
+
+/* author details page */
+.author-details a{
+  text-decoration: none;
+}
+.author-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.author-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* edit author detail form*/
+.author-edit {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.author-edit label {
+  text-align: left;
+  display: block;
+}
+.author-edit h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.author-edit input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.author-edit button {
   background: #f1356d;
   color: #fff;
   border: 0;

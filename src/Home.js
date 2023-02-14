@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
   const { data, isLoading, error } = useFetch('http://localhost:8000/blogs');
-
+    console.log(data);
     // useEffect(() => {
     //     console.log('data updated');
     // }, [blogs]);

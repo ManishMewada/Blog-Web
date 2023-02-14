@@ -1,0 +1,34 @@
+{
+  "authors": [
+    {
+      "authorName": "Harry",
+      "authorEmail": "harry2@gmail.com",
+      "id": 2
+    },
+    {
+      "authorName": "Mario",
+      "authorEmail": "mario1@gmail.com",
+      "id": 3
+    },
+    {
+      "authorName": "Manish",
+      "authorEmail": "manish4@test.com",
+      "id": 5
+    },
+    {
+      "authorName": "Yash",
+      "authorEmail": "yash5@test.io",
+      "id": 6
+    },
+    {
+      "authorName": "Yoshi",
+      "authorEmail": "yoshi3@gmail.com",
+      "id": 7
+    },
+    {
+      "authorName": "Ghanshyam",
+      "authorEmail": "ghanshyam45@test.com",
+      "id": 8
+    }
+  ]
+}

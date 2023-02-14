@@ -1,19 +1,17 @@
 import useFetch from "./useFetch";
 import { useParams, useHistory } from "react-router-dom";
-import { useState ,useEffect} from "react";
+import { useState, useEffect } from "react";
 
 const Edit = () => {
     const { id } = useParams();
     const { data } = useFetch('http://localhost:8000/blogs/' + id);
     const [blogData, setBlogData] = useState(data);
-    const history = useHistory(); 
-    // console.log(data);
+    const history = useHistory();
     console.log(blogData);
 
     useEffect(() => {
         setBlogData(data);
-        // console.log(data, '- Has changed')
-    },[data]) 
+    }, [data])
 
     const handleUpdate = (e) => {
         e.preventDefault();
@@ -42,9 +40,9 @@ const Edit = () => {
             <h2>Edit Blog</h2>
             {data && <form onSubmit={handleUpdate} defaultValue={data}>
                 <label>Blog title : </label>
-                <input type="text" name = "title" defaultValue={data.title}required />
+                <input type="text" name="title" defaultValue={data.title} required />
                 <label>Blog body : </label>
-                <textarea  name = "body" defaultValue={data.body}required ></textarea>
+                <textarea name="body" defaultValue={data.body} required ></textarea>
                 <label>Blog author : </label>
                 <select name="author" defaultValue={data.author}>
                     <option value="Mario">Mario</option>

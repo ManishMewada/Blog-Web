@@ -5,6 +5,10 @@ import Create from './Create';
 import BlogDetail from './BlogDetails';
 import NotFound from './NotFound';
 import Edit from './Edit';
+import AuthorCreate from './AuthorCreate';
+import Author from './Author';
+import AuthorDetails from './AuthorDetails';
+import AuthorEdit from './AuthorEdit';
 
 function App() {
   return (
@@ -24,6 +28,18 @@ function App() {
             </Route>
             <Route path="/edit/:id">
               <Edit />
+            </Route>
+            <Route exact path='/authors'>
+              <Author />
+            </Route>
+            <Route path='/authorcreate'>
+              <AuthorCreate />
+            </Route>
+            <Route path='/authors/:id'>
+              <AuthorDetails />
+            </Route>
+            <Route path='/authoredit/:id'>
+              <AuthorEdit />
             </Route>
             <Route path='*'>
               <NotFound />
